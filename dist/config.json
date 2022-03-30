@@ -1,0 +1,5 @@
+{
+    "port": 16666,
+    "initRes":"{\"code\":0,\"msg\":\"Success\",\"data\":\"im ok\"}",
+    "initPath":"/app"
+}
