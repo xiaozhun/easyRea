@@ -5,14 +5,14 @@ import (
 	"easyReq/model"
 	"easyReq/model/request"
 	"encoding/json"
-	"io/ioutil"
+	"io"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
 )
 
 func Index(c *gin.Context) {
-	result, err := ioutil.ReadAll(c.Request.Body)
+	result, err := io.ReadAll(c.Request.Body)
 	if err != nil {
 		global.GVA_LOG.Error("未获取到body数据")
 	}
